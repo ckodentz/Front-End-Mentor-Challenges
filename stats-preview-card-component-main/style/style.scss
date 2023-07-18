@@ -1,0 +1,115 @@
+@import "./reset";
+@import "./variables";
+
+body {
+    font-family: $main-font;
+    background-color: $main-background;
+    min-height: 100vh;
+    color: $white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: $primary-color;
+}
+
+main {
+    width: 90%;
+    background-color: $card-background;
+    border-radius: $px10;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    @media (min-width: $tablet) {
+        flex-direction: row;
+        max-width: 68.75rem;
+    }
+}
+
+.imageContainer {
+    background-color: $accent;
+    order: 1;
+    @media (min-width: $tablet) {
+        width: 50%;
+        order: 2;
+    }
+}
+
+.bannerImage {
+    mix-blend-mode: multiply;
+    opacity: 0.8;
+    width: 100%;
+    @media (min-width: $tablet) {
+        height: 100%;
+        width: 100%;
+    }
+}
+
+.details {
+    order: 2;
+    padding: $px20 $px30;
+    text-align: center;
+    @media (min-width: $tablet) {
+        width: 50%;
+        order: 1;
+        padding: $px50;
+        text-align: left;
+    }
+}
+
+.title {
+    font-size: $px30;
+    color: $white;
+    @media (min-width: $tablet) {
+        font-size: $px35;
+    }
+}
+
+.title span {
+    color: $accent;
+}
+
+.description {
+    margin: $px10 0;
+    font-size: $px16;
+    @media (min-width: $tablet) {
+        margin: $px20 0;
+        font-size: $px18;
+    }
+}
+
+ul {
+    font-family: $main-font;
+    margin-top: $px40;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 0;
+    gap: $px20;
+    @media (min-width: $tablet) {
+        flex-direction: row;
+        justify-content: flex-start;
+        gap: $px60;
+        margin-top: $px60;
+    }
+}
+
+.count {
+    color: $white;
+    font-weight: 700;
+    font-size: $px24;
+}
+
+.data {
+    font-family: $sub-font;
+    text-transform: uppercase;
+}
+
+.attribution {
+    font-size: 0.6875rem;
+    text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}

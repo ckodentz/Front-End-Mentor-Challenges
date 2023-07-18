@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  margin-top: 5rem;
+  width: 90%;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  color: hsl(0deg, 0%, 95%);
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 48rem) {
+  main {
+    margin: 0;
+    flex-direction: row;
+    width: min(90%, 57.1825rem);
+  }
+}
+
+.card {
+  padding: 3.2rem;
+}
+@media (min-width: 48rem) {
+  .card {
+    padding: 2rem;
+  }
+}
+
+img {
+  margin-bottom: 2rem;
+}
+
+h2 {
+  font-family: "Big Shoulders Display", cursive;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+
+p,
+.learn-more {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 0.9375rem;
+  line-height: 1.5rem;
+}
+@media (min-width: 48rem) {
+  p,
+.learn-more {
+    font-size: 1rem;
+  }
+}
+
+.learn-more {
+  display: inline-block;
+  text-decoration: none;
+  background-color: hsl(0deg, 0%, 95%);
+  border: 0;
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  cursor: pointer;
+  border: 1px solid hsl(0deg, 0%, 95%);
+  transition: 0.3s;
+  margin-top: 1.5rem;
+}
+@media (min-width: 48rem) {
+  .learn-more {
+    margin-top: 4rem;
+  }
+}
+
+.sedans {
+  background-color: hsl(31deg, 77%, 52%);
+}
+
+.sedans .learn-more {
+  color: hsl(31deg, 77%, 52%);
+}
+.sedans .learn-more:hover {
+  background-color: hsl(31deg, 77%, 52%);
+  color: hsl(0deg, 0%, 95%);
+  border-color: hsl(0deg, 0%, 95%);
+}
+
+.suvs {
+  background-color: hsl(184deg, 100%, 22%);
+}
+
+.suvs .learn-more {
+  color: hsl(184deg, 100%, 22%);
+}
+.suvs .learn-more:hover {
+  background-color: hsl(184deg, 100%, 22%);
+  color: hsl(0deg, 0%, 95%);
+  border-color: hsl(0deg, 0%, 95%);
+}
+
+.luxury {
+  background-color: hsl(179deg, 100%, 13%);
+}
+
+.luxury .learn-more {
+  color: hsl(179deg, 100%, 13%);
+}
+.luxury .learn-more:hover {
+  background-color: hsl(179deg, 100%, 13%);
+  color: hsl(0deg, 0%, 95%);
+  border-color: hsl(0deg, 0%, 95%);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228deg, 45%, 44%);
+}/*# sourceMappingURL=style.css.map */

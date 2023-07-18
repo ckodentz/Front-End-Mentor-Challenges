@@ -1,0 +1,131 @@
+@import "./reset";
+@import "./variables";
+
+html {
+    font-family: $main-font;
+    font-weight: 500;
+    font-size: 62.5%;
+}
+
+body {
+    color: $primary-color;
+    background-color: $body-bg;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../images/pattern-background-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: contain;
+    @media (min-width: $tablet) {
+        background-image: url(../images/pattern-background-desktop.svg);
+    }
+}
+
+main {
+    width: clamp(32em, 90%, 45em);
+    background-color: $white;
+    text-align: center;
+    overflow: hidden;
+    border-radius: 2rem;
+}
+
+.banner-img {
+    width: 100%;
+}
+
+.details {
+    padding: 3rem;
+    @media (min-width: $tablet) {
+        padding: 5rem;
+    }
+}
+
+.title {
+    font-size: 2.2rem;
+    font-weight: 900;
+    color: $secondary-color;
+}
+
+.claim {
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 2.4rem;
+    color: $primary-color;
+    margin: 2rem 0;
+}
+
+.promo {
+    font-size: 1.4rem;
+    background-color: $promo-bg;
+    border-radius: 1rem;
+    padding: 2em;
+    margin: 3rem 0;
+    gap: 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: left;
+    @media (max-width: 320px) {
+        justify-content: center;
+    }
+}
+
+.plan {
+    font-weight: 900;
+    color: $secondary-color;
+}
+
+.change {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: $highlight;
+    transition: $transition;
+    margin-left: auto;
+    &:hover {
+        text-decoration: none;
+        opacity: $opacity;
+    }
+}
+
+.btn {
+    width: 100%;
+    background-color: $highlight;
+    font-size: 1.4rem;
+    font-weight: 900;
+    color: $white;
+    padding: 1.2em;
+    border: 1px solid $highlight;
+    border-radius: 1rem;
+    margin: 1rem 0;
+    cursor: pointer;
+    transition: $transition;
+    box-shadow: $shadow;
+    &:hover {
+        opacity: $opacity;
+    }
+}
+
+.cancel {
+    font-size: 1.6rem;
+    font-weight: 700;
+    display: block;
+    text-decoration: none;
+    color: $primary-color;
+    margin-top: 2rem;
+    transition: $transition;
+    &:hover {
+        color: $secondary-color;
+    }
+}
+
+.attribution {
+    font-size: 1.1rem;
+    text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
